@@ -19,7 +19,7 @@
 function switchToLogin() {
     window.location.href = "http://127.0.0.1:4100/frontcasts/login.html";
 }
-function signup() {f
+function signup() {
     data = {
         "name": document.getElementById("name").value,
         "uid": document.getElementById("user").value,
