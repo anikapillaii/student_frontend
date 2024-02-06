@@ -2,7 +2,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <h1>Login</h1>
 </head>
 <div class="form-container">
     <h2 id="pageTitle">Sign Up</h2>
@@ -23,7 +22,7 @@ function signup() {
     data = {
         "name": document.getElementById("name").value,
         "uid": document.getElementById("user").value,
-        "password": document.getElementById("pass").value
+        "password": docume  nt.getElementById("pass").value
     }
     let options = {
     method: 'POST',
