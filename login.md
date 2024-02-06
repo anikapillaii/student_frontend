@@ -24,7 +24,6 @@ function signup() {
         "name": document.getElementById("name").value,
         "uid": document.getElementById("user").value,
         "password": document.getElementById("pass").value,
-        "role": "default"
     }
     let options = {
         method: 'POST',
