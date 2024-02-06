@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <div class="form-container">
-
     <h2 id="pageTitle">Login</h2>
     <form>
         <input type="text" id="name" class="input" placeholder="Full Name"><br>
@@ -61,7 +60,6 @@ function signup() {
         console.error("Error:", error);
     });
 }
-
 function getCookie(name) {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);

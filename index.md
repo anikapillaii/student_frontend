@@ -8,56 +8,6 @@ search_exclude: true
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigation Bar</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        nav {
-            background-color: #333;
-            overflow: hidden;
-        }
-        nav button {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        nav a.active {
-            background-color: #4CAF50;
-            color: white;
-        }
-            nav button:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        nav button.active {
-            background-color: #4CAF50;
-            color: white;
-        }
-    </style>
 </head>
 <body>
 
