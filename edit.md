@@ -17,6 +17,7 @@ function update() {
     data = {
         "name": document.getElementById("username").value,
         "uid": document.getElementById("uid").value,
+        "role": "admin"
     }
     let options = {
     method: 'PUT',
@@ -44,6 +45,7 @@ function update() {
 function del() {
     data = {
         "uid": document.getElementById("_uid").value,
+        "role": "admin"
     }
     let options = {
     method: 'DELETE',
