@@ -1,19 +1,24 @@
-<html       >
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <h1>Login</h1>
 </head>
 <div class="form-container">
+    <h2 id="pageTitle">Sign Up</h2>
     <form>
         <input type="text" id="name" class="input" placeholder="Full Name"><br>
         <input type="text" id="user" class="input" placeholder="Username"><br>
         <input type="password" id="pass" class="input" placeholder="Password">
     </form>
-        <button class = "submit" onclick = "signup()">Log In</button>
-        <p id = "error"></p>
+    <button class="submit" onclick="signup()">Sign Up</button>
+    <p id="error"></p>
+    <button onclick="switchToLogin()">Switch to Login</button>
 </div>
 <script>
+function switchToLogin() {
+    window.location.href = "http://127.0.0.1:4100/frontcasts/login.html";
+}
 function signup() {
     data = {
         "name": document.getElementById("name").value,
