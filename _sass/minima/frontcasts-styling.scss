@@ -1,0 +1,25 @@
+.form-container {
+    text-align: center;
+    background-color: #ffffff; /* Optional: Add a background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #007bff; /* Change focus color as needed */
+}
+
+#user, #pass {
+    margin-bottom: 16px; /* Optional: Adjust the space between inputs */
+}
