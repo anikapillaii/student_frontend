@@ -4,16 +4,17 @@ search_exclude: true
 ---
 
 <script>
-    window.addEventListener("load", (event) => {
-        console.log("hi")
-        isCookie = document.cookie.match(/^(.*;)?\s*jwt\s*=\s*[^;]+(.*)?$/)
-        if (isCookie) {
-            console.log("true")
-        }
-        else {
-            console.log("nuh uh")
-        }
-    })
+let options = {
+    method: 'GET',
+    headers: {
+        'Content-Type':
+            'application/json;charset=utf-8'
+    }
+}
+fetch("http://127.0.0.1:8086/api/users/", options)
+.then(response => {
+    console.log(response.json())
+})
 </script>
 
 

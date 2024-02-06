@@ -25,23 +25,37 @@ function signup() {
         'Content-Type':
             'application/json;charset=utf-8'
     },
-    body: JSON.stringify(data)
+    body: JSON.stringify(data),
+    credentials: 'include'
 }
-    let sign_up = fetch('http://127.0.0.1:8086/api/users/authenticate', options);
-    sign_up.then(response => {
-        if (response.status === 200) {
+    fetch('http://127.0.0.1:8086/api/users/authenticate', options)
+    .then(response => {
+        if (response.ok) {
+            const headers = response.headers;
+            const headerEntries = [...headers.entries()]
+            console.log('Response Headers:', headerEntries)
             console.log('All Cookies:', document.cookie);
             document.getElementById("error").innerHTML = ""
     // Print out the cookie and the response data
-            console.log(document.cookie)
+            const jwtCookie = getCookie('jwt');
+            // Check if the 'jwt' cookie is present
+            if (jwtCookie) {
+                // Display the 'jwt' cookie value
+                console.log('JWT Token:', jwtCookie);
+            } else {
+                console.log('JWT Token not found');
+            }
             // Check if the JWT cookie is present
             //window.location.href = "http://127.0.0.1:4100/frontcasts/"
         }
-        else if (response.status === 400) {
+        else if (!response.ok) {
             document.getElementById("error").innerHTML = "Incorrect Login Information"
         }
     }
-        ) 
+        )
+    .catch(error => {
+    console.error("Error:", error);
+}); 
 }
 // Function to get the value of a cookie by name
 function getCookie(name) {
