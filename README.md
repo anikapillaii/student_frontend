@@ -91,7 +91,7 @@ Deployment Cycle.  In the deployment cycle, `sync-github-action-review`, it is a
 
 ### Preview
 
-- The result of these step is server running on: http://0.0.0.0:4100/teacher/.  Regeneration messages will run in terminal on any save.  Press the Enter or Return key in the terminal at any time to enter commands.
+- The result of these step is server running on: http://0.0.0.0:4200/teacher/.  Regeneration messages will run in terminal on any save.  Press the Enter or Return key in the terminal at any time to enter commands.
 
 - Complete installation
 
@@ -111,7 +111,7 @@ bundle install
   - Terminal output of shows server address. Cmd or Ctl click http location to open preview server in browser. Example Server address message... 
 
     ```text
-    Server address: http://0.0.0.0:4100/teacher/
+    Server address: http://0.0.0.0:4200/teacher/
     ```
 
     - Save on ipynb or md activiates "regeneration". Refresh browser to see updates. Example terminal message...

@@ -12,9 +12,9 @@ search_exclude: true
 <body>
 
 <nav>
-    <a href="http://127.0.0.1:4100/frontcasts/signup">Signup</a>
-    <a href="http://127.0.0.1:4100/frontcasts/edit">Edit</a>
-    <a href="http://127.0.0.1:4100/frontcasts/data">Data</a>
+    <a href="http://127.0.0.1:4200/student_frontend/signup">Signup</a>
+    <a href="http://127.0.0.1:4200/student_frontend/edit">Edit</a>
+    <a href="http://127.0.0.1:4200/student_frontend/data">Data</a>
     <button onclick = "eraseCookie()">Logout </button>
 </nav>
 
@@ -46,6 +46,6 @@ search_exclude: true
             return
         }
         else {
-            window.location.href = "http://127.0.0.1:4100/frontcasts/login.html"
+            window.location.href = "http://127.0.0.1:4200/student_frontend/login.html"
         }
     })

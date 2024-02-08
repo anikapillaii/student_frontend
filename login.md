@@ -16,7 +16,7 @@
 </div>
 <script>
 function switchToSignup() {
-    window.location.href = "http://127.0.0.1:4100/frontcasts/signup.html";
+    window.location.href = "http://127.0.0.1:4200/student_frontend/signup.html";
 }
 function signup() {
     data = {
@@ -48,7 +48,7 @@ function signup() {
                 console.log('JWT Token not found');
             }
             // Redirect to the desired page after successful login
-            window.location.href = "http://127.0.0.1:4100/frontcasts/";
+            window.location.href = "http://127.0.0.1:4200/student_frontend/";
         }
         else {
             // Handle incorrect login information

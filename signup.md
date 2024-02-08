@@ -16,7 +16,7 @@
 </div>
 <script>
 function switchToLogin() {
-    window.location.href = "http://127.0.0.1:4100/frontcasts/login.html";
+    window.location.href = "http://127.0.0.1:4200/student_frontend/login.html";
 }
 function signup() {
     data = {
@@ -35,7 +35,7 @@ function signup() {
     let sign_up = fetch('http://127.0.0.1:8086/api/users/', options);
     sign_up.then(response => {
         if (response.status === 200) {
-            window.location.href = "http://127.0.0.1:4100/frontcasts/login.html"
+            window.location.href = "http://127.0.0.1:4200/student_frontend/login.html"
         }
         else if (response.status === 400) {
             document.getElementById("error").innerHTML = "You already have an account! Go to the login page."

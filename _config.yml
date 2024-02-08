@@ -1,9 +1,9 @@
-title: Frontcasts
+title: student_frontend
 description: "August 2023 to June 2024"
-owner_name: David Lee
-github_username: DavidL 0914
-github_repo: "frontcasts"
-baseurl: "/frontcasts"
+owner_name: Anika Pillai
+github_username: Anikapillaii
+github_repo: "student_frontend"
+baseurl: "/student_frontend"
 remote_theme: jekyll/minima
 # remote_theme: pages-themes/dinky@v0.2.0
 # remote_theme: pages-themes/minimal@v0.2.0
